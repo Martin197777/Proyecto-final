@@ -1,0 +1,14 @@
+footer {
+  background: rgb(241, 244, 247);
+  background: linear-gradient(0deg,rgba(241, 244, 247, 1) 5%,rgba(216, 11, 40, 1) 91%);
+
+  p {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: $fontMain;
+    font-size: $textLg;
+    text-align: center;
+    padding: 10px 0;
+    color: $black;
+  }
+}
