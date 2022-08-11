@@ -9,6 +9,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: $white;
+    transition: 0.3s;
 
     li {
         ul {
@@ -33,7 +34,10 @@ nav {
 }
 
 nav ul li a:hover {
-    background-size: 100% 2px;
+    background-image:linear-gradient(to bottom, (map-get($map:$colores, $key:'black')) 0%, (map-get($map:$colores, $key:'red')) 100%);
+    background-repeat:no-repeat;
+    background-size: 200% 100%; 
+    transition:background-size .5s, background-color .5s;
 }
 
 nav ul li ul li a:hover {
@@ -44,3 +48,9 @@ nav ul li ul li a:hover {
     transition:background-size .5s, background-color .5s;
     
 }
+ .icono-nav{
+    color: map-get($map: $colores, $key: 'red' );
+    font-size: 20px;
+ }
+
+ 
