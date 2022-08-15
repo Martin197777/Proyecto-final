@@ -21,7 +21,7 @@
   height: auto;
 }
 .imagen:hover {
-  box-shadow: 0 0 2px 1px #66FCF1;
+  box-shadow: 0 0 2px 1px #66fcf1;
 }
 
 .texto-parrafo {
@@ -37,7 +37,8 @@
   transition: 0.5s;
 }
 .btn-font:hover {
-  background: #d80b28;
+  transform: scale(1.05);
+  background: #e2d207;
   font-weight: 500;
 }
 
@@ -46,7 +47,8 @@
   transition: 0.3s;
 }
 .pie__icono--p:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 5px #000000);
 }
 
 .gallery {
@@ -101,17 +103,13 @@ nav {
   background-color: #0b0b0b;
   padding: 5px;
   margin: 5px;
-  font-family: "Paytone One";
-  font-size: 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: #C5C6C7;
-  transition: 0.3s;
+  flex-direction: row;
 }
-nav li ul li {
-  font-size: 1rem;
+nav li {
+  font-family: "Paytone One";
+  font-size: 2.2rem;
+  color: #d80b28 !important;
 }
 
 .nav-animacion ul li a {
@@ -218,10 +216,12 @@ footer p {
   font-size: 2.2rem;
   text-align: center;
   color: #0b0010;
+  margin: 0px;
 }
 @media (max-width: 768px) {
   footer p {
     font-size: 1.5rem;
+    margin: 0px;
   }
 }
 
@@ -257,7 +257,7 @@ p {
 }
 
 .nav-show {
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 section {
@@ -285,12 +285,15 @@ section {
 
 .video--grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  justify-items: space-between;
-  align-items: center;
-  width: 100vw;
   grid-template-areas: "iframe" "iframe" "iframe" "iframe" "iframe" "iframe";
+}
+
+.video--grid iframe, .video--grid object, .video--grid embed {
+  padding: 10px;
+  width: 100%;
+  height: auto;
 }
 
 #iframe {
@@ -302,6 +305,7 @@ section {
   font-family: "Paytone One";
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 20px #d80b28, -2px 1px 30px #e2d207;
 }
 
 .main__articulo__dim {
@@ -351,30 +355,39 @@ section {
 .card-font {
   font-family: "Raleway";
   text-align: center;
-  background-color: rgba(8, 8, 8, 0);
-  color: #C5C6C7;
+  background-color: #0b0b0b;
+  color: #f1f4f7;
   font-size: 2rem;
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  padding-top: 20px;
+}
+
+.card-texto {
+  font-size: "Raleway";
+  color: #e2d207;
+  background-color: rgba(8, 8, 8, 0);
 }
 
 .card-img {
   display: flex;
   justify-content: space-between;
   transition: 0.5s;
+  border-radius: 0% 15%;
 }
 .card-img:hover {
-  transform: scale(1.1);
+  filter: drop-shadow(4px 5px 10px #e2d207);
+  transform: scale(1.05);
 }
 
 .card-title {
   font-family: "Paytone One";
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   padding-bottom: 10px;
   text-align: center;
   color: #e2d207;
+  text-shadow: 3px -3px 28px #d80b28;
 }
 
 .card-size {
@@ -382,8 +395,8 @@ section {
 }
 
 .card-bg {
-  background-color: #0b0b0b;
-  border-color: #0b0b0b;
+  background-color: rgba(8, 8, 8, 0);
+  border-color: rgba(8, 8, 8, 0);
   border-radius: 5px;
   width: 100wv;
 }
@@ -402,6 +415,7 @@ section {
   font-size: 2rem;
   font-weight: 700;
   padding: auto;
+  text-shadow: 3px -3px 28px #e2d207;
 }
 
 .card_overlay-parrafo {
@@ -541,6 +555,7 @@ section {
   .card_overlay-title {
     font-size: 3rem;
     font-weight: 700;
+    text-shadow: 3px -3px 28px #e2d207;
   }
   .card_overlay-parrafo {
     font-size: 2rem;
@@ -581,9 +596,9 @@ section {
     padding: 10px;
   }
   .video--grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "iframe iframe" "iframe iframe" "iframe iframe";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "iframe iframe iframe" "iframe iframe iframe";
   }
   nav {
     margin: auto;
@@ -614,12 +629,12 @@ section {
   }
   .pie__icon--sep {
     width: 100%;
-    margin: 0%;
     flex-direction: row;
   }
   .card_overlay-title {
     font-size: 6rem;
     font-weight: 700;
+    text-shadow: 3px -3px 28px #e2d207;
   }
   .card_overlay-parrafo {
     font-size: 4rem;

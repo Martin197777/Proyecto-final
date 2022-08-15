@@ -9,11 +9,14 @@ footer {
     font-size: $textLg;
     text-align: center;    
     color: $black;
+    margin: 0px;
   }
 
   @media (max-width: 768px){
     p{
       font-size: $textMd;
+      margin: 0px;
+      
     }
   }
   

@@ -37,7 +37,7 @@ p {
 }
 
 .nav-show {
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 section {
@@ -70,11 +70,8 @@ section {
 
 .video--grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  justify-items: space-between;
-  align-items: center;
-  width: 100vw;
   grid-template-areas:
     "iframe"
     "iframe"
@@ -82,7 +79,15 @@ section {
     "iframe"
     "iframe"
     "iframe";
+  
+	
 }
+
+.video--grid iframe, .video--grid object, .video--grid embed {
+	padding: 10px;
+	width: 100%;
+  height: auto;
+	}
 
 #iframe {
   grid-area: iframe;
@@ -94,6 +99,7 @@ section {
   font-family: $fontMain;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 20px map-get($map: $colores, $key: 'red'),-2px 1px 30px map-get($map: $colores, $key: 'yellow');
 }
 
 .main__articulo__dim {
@@ -144,31 +150,43 @@ section {
 .card-font {
   font-family: $fontSecondary;
   text-align: center;
-  background-color: map-get($map: $colores, $key: "transparent");
-  color: $white;
+  background-color: map-get($map: $colores, $key: "black");
+  color: map-get($map: $colores, $key: "white");
   font-size: 2rem;
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  padding-top: 20px;
+}
+
+.card-texto {
+  font-size: $fontSecondary;
+  color: map-get($map: $colores, $key: "yellow");
+  background-color: map-get($map: $colores, $key: "transparent");
 }
 
 .card-img {
   display: flex;
   justify-content: space-between;
   transition: 0.5s;
+  border-radius: 0% 15%;
+  
 
   &:hover {
-    transform: scale(1.1);
+    filter: drop-shadow(
+      4px 5px 10px map-get($map: $colores, $key: "yellow")
+    );
+    transform: scale(1.05);
   }
 }
 
 .card-title {
   font-family: $fontMain;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: $textBold;
   padding-bottom: 10px;
   text-align: center;
   color: map-get($map: $colores, $key: "yellow");
+  text-shadow: 3px -3px 28px #d80b28;
 }
 
 .card-size {
@@ -176,8 +194,8 @@ section {
 }
 
 .card-bg {
-  background-color: map-get($map: $colores, $key: "black");
-  border-color: map-get($map: $colores, $key: "black");
+  background-color: map-get($map: $colores, $key: "transparent");
+  border-color: map-get($map: $colores, $key: "transparent");
   border-radius: 5px;
   width: 100wv;
 }
@@ -196,6 +214,7 @@ section {
   font-size: 2rem;
   font-weight: $textBold;
   padding: auto;
+  text-shadow: 3px -3px 28px #e2d207;
 }
 
 .card_overlay-parrafo {
@@ -294,16 +313,14 @@ section {
   align-items: center;
 }
 
-
-
 .google-maps {
-   display: flex;
-   margin-left: 10%;
-   margin-right: 10%;
-   padding-bottom: 20px;
-   width: 80vw;
-   height: 65vh;
-  }
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 20px;
+  width: 80vw;
+  height: 65vh;
+}
 
 @media (min-width: 768px) {
   .container-grid {
@@ -362,6 +379,7 @@ section {
   .card_overlay-title {
     font-size: 3rem;
     font-weight: $textBold;
+    text-shadow: 3px -3px 28px #e2d207;
   }
 
   .card_overlay-parrafo {
@@ -416,12 +434,12 @@ section {
   }
 
   .video--grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-      "iframe iframe"
-      "iframe iframe"
-      "iframe iframe";
+      "iframe iframe iframe"
+      "iframe iframe iframe";
+      
   }
 
   nav {
@@ -463,13 +481,14 @@ section {
 
   .pie__icon--sep {
     width: 100%;
-    margin: 0%;
+
     flex-direction: row;
   }
 
   .card_overlay-title {
     font-size: 6rem;
     font-weight: $textBold;
+    text-shadow: 3px -3px 28px #e2d207;
   }
 
   .card_overlay-parrafo {

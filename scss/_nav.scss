@@ -2,25 +2,24 @@ nav {
     background-color: map-get($map:$colores, $key:'black');
     padding: 5px;
     margin: 5px;
-    font-family: $fontMain;
-    font-size: $textSm;
+    
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: $white;
-    transition: 0.3s;
+    flex-direction: row;
+    
+    
+    
 
     li {
-        ul {
+        font-family: $fontMain;
+        font-size: $textLg;
+        color: map-get($map: $colores, $key: 'red');
 
-            li {
-                font-size: $textSm;
-            }
 
         }
 
-    }
+        
+
+    
 
     
 
