@@ -10,20 +10,6 @@
   justify-content: center;
 }
 
-.imagen {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 40vw;
-  height: auto;
-}
-.imagen:hover {
-  box-shadow: 0 0 2px 1px #66fcf1;
-}
-
 .texto-parrafo {
   color: #C5C6C7;
 }
@@ -44,7 +30,7 @@
 
 .pie__icono--p {
   width: 80px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .pie__icono--p:hover {
   transform: scale(1.05);
@@ -106,32 +92,18 @@ nav {
   display: flex;
   flex-direction: row;
 }
-nav li {
+nav ul li a {
   font-family: "Paytone One";
-  font-size: 2.2rem;
-  color: #d80b28 !important;
+  color: #e2d207 !important;
 }
 
 .nav-animacion ul li a {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.5s;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
-  background-image: linear-gradient(to bottom, #0b0b0b 0%, #d80b28 100%);
-  background-repeat: no-repeat;
-  background-size: 200% 100%;
-  transition: background-size 0.5s, background-color 0.5s;
-}
-
-nav ul li ul li a:hover {
-  background-image: linear-gradient(to bottom, #0b0b0b 0%, #d80b28 100%);
-  background-repeat: no-repeat;
-  background-size: 200% 100%;
-  transition: background-size 0.5s, background-color 0.5s;
+  color: #d80b28 !important;
+  transform: scale(1.07);
 }
 
 .icono-nav {
@@ -139,8 +111,14 @@ nav ul li ul li a:hover {
   font-size: 20px;
 }
 
+.nav-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 table {
-  border: 1px solid #ccc;
+  border: 1px solid #f1f4f7;
   border-collapse: collapse;
   margin: 0;
   padding: 0;
@@ -188,10 +166,6 @@ table th {
     position: absolute;
     width: 1px;
   }
-  table tr {
-    border-bottom: 3px solid rgb(0, 0, 0);
-    margin-bottom: 0.625em;
-  }
   table td {
     border-bottom: 1px solid rgb(0, 0, 0);
     font-size: 0.8em;
@@ -207,7 +181,7 @@ table th {
   }
 }
 footer {
-  background: linear-gradient(#f1f4f7 2%, #d80b28 95%);
+  background: linear-gradient(#d80b28 2%, #e2d207 95%);
 }
 footer p {
   display: flex;
@@ -256,8 +230,9 @@ p {
   width: 40px;
 }
 
-.nav-show {
-  align-items: flex-end;
+.logo {
+  width: 50%;
+  height: auto;
 }
 
 section {
@@ -290,7 +265,9 @@ section {
   grid-template-areas: "iframe" "iframe" "iframe" "iframe" "iframe" "iframe";
 }
 
-.video--grid iframe, .video--grid object, .video--grid embed {
+.video--grid iframe,
+.video--grid object,
+.video--grid embed {
   padding: 10px;
   width: 100%;
   height: auto;
@@ -322,7 +299,7 @@ section {
 }
 
 .label-text {
-  text-shadow: 0 0 4px #000000;
+  text-shadow: 3px 3px 20px #d80b28, -2px 1px 30px #e2d207;
   font-family: "Paytone One";
   font-size: 1.1rem;
   font-weight: 200;
@@ -373,16 +350,23 @@ section {
   display: flex;
   justify-content: space-between;
   transition: 0.5s;
-  border-radius: 0% 15%;
 }
 .card-img:hover {
   filter: drop-shadow(4px 5px 10px #e2d207);
   transform: scale(1.05);
 }
 
+.card-border {
+  border-radius: 0% 10%;
+}
+
+.card-border-inv {
+  border-radius: 10% 0%;
+}
+
 .card-title {
   font-family: "Paytone One";
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
   padding-bottom: 10px;
   text-align: center;
@@ -424,8 +408,8 @@ section {
   color: #79031d;
   justify-content: center;
   font-family: "Raleway";
-  font-size: 1.3rem;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 20px;
   padding: auto;
 }
 
@@ -433,7 +417,7 @@ section {
   background-color: rgba(16, 14, 14, 0);
   font-family: "Paytone One";
   font-size: 1.2rem;
-  color: #C5C6C7;
+  color: #C5C6C7 !important;
   font-weight: 200;
 }
 
@@ -452,10 +436,9 @@ section {
 
 .br-font {
   font-family: "Paytone One";
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 10px;
   padding: 10px;
-  color: #C5C6C7;
 }
 
 #section {
@@ -525,6 +508,13 @@ section {
     grid-template-rows: repeat(10vh 20vh 40vh 20vh 10vh);
     grid-template-areas: "section section" "nav nav" "header header" "main main" "footer footer";
   }
+  .logo {
+    width: 75%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 5rem;
+  }
   .main__articulo__dim {
     padding: 20px;
     margin: 20px auto;
@@ -578,6 +568,10 @@ section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "section section section" "nav nav nav" "header header header" "main main main" "footer footer footer";
+  }
+  .logo {
+    width: 100%;
+    height: auto;
   }
   .horarios {
     font-size: 2rem;

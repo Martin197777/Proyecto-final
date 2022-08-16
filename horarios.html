@@ -17,35 +17,30 @@
 <body>
     <div class="container-grid">
         <section id="section">
-            <div class="encabezado__fondo--color">
-                <p class="texto-parrafo text">La mejor forma de estar en forma</p>
+            <div>
+                <p class="texto-parrafo">La mejor forma de estar en forma</p>
             </div>
         </section>
         <div class="container-fluid">
-            <nav class="nav-animacion navbar navbar-expand-lg navbar-dark">
+            <nav id="nav" class="nav-animacion navbar navbar-expand-lg">
                 <div class="wow animate__animated animate__flip animate__slow">
                     <a class="navbar-brand" href="index.html">
                         <img src="img/logo.png" alt="Logo de Fitness First">
                     </a>
                 </div>
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-align-justify icono-nav"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0  nav-show">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-show nav-row">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="horarios.html">Horarios</a>
                         </li>
                         <li class="nav-item">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Galeria
-                            </a>
-                            <ul class="dropdown-menu bg-transparent nav-font" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item text-light bg-transparent" href="fotos.html">Fotos</a></li>
-                                <li><a class="dropdown-item text-light bg-transparent" href="videos.html">Videos</a>
-                                </li>
-                            </ul>
+                            <a class="nav-link active" aria-current="page" href="fotos.html">Fotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="videos.html">Videos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="tienda_online.html">Tienda Online</a>
@@ -70,20 +65,18 @@
                 de actividades</h1>
         </header>
         <main class="animacion-main" id="main">
-            <div class="horarios wow animate__animated animate__fadeIn animate__slower table-pos">
+            <div class="horarios wow animate__animated animate__fadeIn animate__slower">
                 <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Dia</th>
-                            <th scope="col">10:00</th>
-                            <th scope="col">12:00</th>
-                            <th scope="col">14:00</th>
-                            <th scope="col">16:00</th>
-                            <th scope="col">18:00</th>
-                            <th scope="col">21:00</th>
-                        </tr>
-                    </thead>
                     <tbody>
+                        <tr>
+                            <th>Dia</th>
+                            <th>10:00</th>
+                            <th>12:00</th>
+                            <th>14:00</th>
+                            <th>16:00</th>
+                            <th>18:00</th>
+                            <th>21:00</th>
+                        </tr>
                         <tr>
                             <td>Lunes</td>
                             <td>Funcional</td>

@@ -54,7 +54,7 @@ body {
     margin-left: -12px;
     color: #030005;
     text-transform: uppercase;
-    text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;
+    text-shadow: -1px -1px 0px #e2d207, 1px 1px 0px #d80b28;
     letter-spacing: -20px;
 }
 
@@ -69,7 +69,7 @@ body {
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    text-shadow: 0px 2px 0px #8400ff;
+    text-shadow: 0px 2px 0px #e2d207;
     letter-spacing: 13px;
     margin: 0;
 }
@@ -78,7 +78,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     text-transform: uppercase;
-    color: #ff005a;
+    color: #d80b28;
     text-decoration: none;
     border: 2px solid;
     background: transparent;
@@ -90,7 +90,7 @@ body {
 }
 
 .notfound a:hover {
-    color: #8400ff;
+    color: #e2d207;
 }
 
 @media only screen and (max-width: 767px) {

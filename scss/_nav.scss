@@ -2,54 +2,54 @@ nav {
     background-color: map-get($map:$colores, $key:'black');
     padding: 5px;
     margin: 5px;
-    
     display: flex;
     flex-direction: row;
-    
-    
-    
 
-    li {
+
+
+
+
+
+    ul li a {
         font-family: $fontMain;
-        font-size: $textLg;
-        color: map-get($map: $colores, $key: 'red');
+        color: map-get($map: $colores, $key: 'yellow') !important;
 
 
-        }
 
-        
+    }
 
-    
 
-    
+
+
+
+
 
 }
+
+
+
 .nav-animacion ul li a {
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .5s;
+
+    transition: .3s;
 }
 
 nav ul li a:hover {
-    background-image:linear-gradient(to bottom, (map-get($map:$colores, $key:'black')) 0%, (map-get($map:$colores, $key:'red')) 100%);
-    background-repeat:no-repeat;
-    background-size: 200% 100%; 
-    transition:background-size .5s, background-color .5s;
+    color: map-get($map: $colores, $key: 'red') !important;
+    transform: scale(1.07);
 }
 
-nav ul li ul li a:hover {
-    
-    background-image:linear-gradient(to bottom, (map-get($map:$colores, $key:'black')) 0%, (map-get($map:$colores, $key:'red')) 100%);
-    background-repeat:no-repeat;
-    background-size: 200% 100%; 
-    transition:background-size .5s, background-color .5s;
-    
-}
- .icono-nav{
-    color: map-get($map: $colores, $key: 'red' );
+
+.icono-nav {
+    color: map-get($map: $colores, $key: 'red');
     font-size: 20px;
- }
+}
 
- 
+.nav-row {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+
+}
