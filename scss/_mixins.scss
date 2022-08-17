@@ -35,7 +35,7 @@ $colores: ("black": #0b0b0b,
 .texto-parrafo {
     @extend .main__parrafo--italic;
     color: map-get($map: $colores, $key: 'white');
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .btn-font {
