@@ -11,14 +11,15 @@
 }
 
 .texto-parrafo {
-  color: #C5C6C7;
+  color: #f1f4f7;
+  justify-content: flex-end;
 }
 
 .btn-font {
   font-family: "Paytone One";
   font-size: 1.6rem;
   font-weight: 100;
-  color: #0b0010;
+  color: #0b0b0b;
   border: none;
   transition: 0.5s;
 }
@@ -357,7 +358,7 @@ section {
 }
 
 .card-border {
-  border-radius: 0% 10%;
+  border-radius: 15% 15%;
 }
 
 .card-border-inv {
@@ -411,6 +412,18 @@ section {
   font-size: 1rem;
   line-height: 20px;
   padding: auto;
+}
+
+.card-pos {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.card-pos-inv {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
 }
 
 .acc-color {
@@ -560,6 +573,13 @@ section {
     align-items: center;
     line-height: 30px;
     font-size: 1rem;
+  }
+  .card-pos {
+    flex-direction: row;
+    align-items: center;
+  }
+  .card-pos-inv {
+    flex-direction: row-reverse;
   }
 }
 @media (min-width: 1024px) {

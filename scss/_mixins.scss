@@ -19,7 +19,7 @@ $colores: ("black": #0b0b0b,
 
 .encabezado-fotos {
     @extend .encabezado__titulos--textcenter;
-    background-color: rgba(17, 16, 16, 0);
+    background-color: rgba(17, 16, 16, 0.0);
 }
 
 .texto-fotos {
@@ -34,21 +34,22 @@ $colores: ("black": #0b0b0b,
 
 .texto-parrafo {
     @extend .main__parrafo--italic;
-    color: $white;
+    color: map-get($map: $colores, $key: 'white');
+    justify-content: flex-end;
 }
 
 .btn-font {
     font-family: $fontMain;
     font-size: 1.6rem;
     font-weight: 100;
-    color: $black;
+    color: map-get($map: $colores, $key: 'black');
     border: none;
-    background: map-get($map: $colores, $key: "gray");
+    background: map-get($map: $colores, $key: 'gray');
     transition: 0.5s;
 
     &:hover {
         transform: scale(1.05);
-        background: map-get($map: $colores, $key: "yellow");
+        background: map-get($map: $colores, $key: 'yellow');
         font-weight: 500;
     }
 }
