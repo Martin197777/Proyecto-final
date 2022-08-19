@@ -38,4 +38,6 @@ Pages de Github - https://martin197777.github.io/Proyecto-final/index.html
 
 Link de Netlify - https://gimnasio-fitness-first.netlify.app
 
+En el repositorio se incluye el presupuesto en un documento de Word.
+
 
