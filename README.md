@@ -5,15 +5,15 @@ Este es un sitio web de un gimnasio ficticio, en total son 6 paginas, Index, Hor
 
 Index:
 
-Es la pagina principal, cuenta con informacion sobre el gimnasio, imagenes, noticias y detalle de todas las actividades que los socios pueden realizar
+Es la página principal, cuenta con información sobre el gimnasio, imágenes, noticias y detalle de todas las actividades que los socios pueden realizar
 
 Horarios:
 
-En esta pagina hay una tabla con todos los horarios y dias de las actividades.
+En esta página hay una tabla con todos los días horarios de las diferentes actividades.
 
 Fotos:
 
-Una galeria de fotos del gimnasio, ficticias obviamente.
+Una galería de fotos del gimnasio, ficticias obviamente.
 
 Videos:
 
@@ -21,13 +21,13 @@ Videos:
 
 Tienda online:
 
-Pagina de la tienda donde se podrian comprar diferentes productos como por ejemplo suplementos o ropa deportiva.
+Página de la tienda donde se podrían comprar diferentes productos como por ejemplo suplementos de proteínas o ropa deportiva.
 
 Contacto:
 
-En la pagina hay un formulario de contacto donde se podria enviarnos un mensaje, asi como un mapa de google maps con la ubicacion del gimnasio.
+En la página hay un formulario de contacto donde se podría enviar un mensaje, así como un mapa de google maps con la ubicación del gimnasio.
 
-Todas las paginas tienen en el footer la direccion del gimnasio, el telefono y links a Facebook, Instagram y Twitter.
+Todas las páginas tienen en el footer la dirección del gimnasio, el teléfono y links a Facebook, Instagram y Twitter.
 
 
 Enlaces:
