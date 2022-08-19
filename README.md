@@ -40,4 +40,5 @@ Link de Netlify - https://gimnasio-fitness-first.netlify.app
 
 En el repositorio se incluye el presupuesto en un documento de Word.
 
+En la carpeta Wireframe estan los wireframes de la pagina realizados en wireframe.cc
 
