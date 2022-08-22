@@ -29,6 +29,8 @@ En la página hay un formulario de contacto donde se podría enviar un mensaje, 
 
 Todas las páginas tienen en el footer la dirección del gimnasio, el teléfono y links a Facebook, Instagram y Twitter.
 
+La página de error 404 esta enlazada a los botones de agregar al carrito de la tienda online y al botón enviar de la página de contacto.
+
 
 Enlaces:
 
